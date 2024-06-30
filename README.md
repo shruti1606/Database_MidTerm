@@ -103,3 +103,10 @@ No | Name | Type | Null | Default
 3 | book_id | int(11) | Yes | NULL
 4 | sale_date | timestamp | No | current_timestamp()
 5 | amount | decimal(10,2) | Yes | NULL
+## CRUD Operations on the **Books** Table
+## Insertion Operation 
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(1, 'Rich Dad poor Dad', 'Personal Finance', 'Physical', 1, 1, '01-04-2000', 23.99),
+(2, '1984', 'Dystopian', 'E-Book', 2, 2, '1949-06-08', 8.99);
+
+
