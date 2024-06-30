@@ -2,7 +2,7 @@
 
 ## Roles of Group Members:
 Name | Role
---- | :---: 
+--- | :---
 Shruti Patel | Database & Tables Creation
 Pratham Parekh | CRUD Operations
 Manish Koladiya | Requirements Execution
