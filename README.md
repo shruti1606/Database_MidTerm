@@ -13,7 +13,7 @@ CREATE TABLE Authors (
     author_id INT PRIMARY KEY,
     name VARCHAR(100),
     biography TEXT);    
-## Author Table Output 
+## Authors Table Output 
 No | Name | Type | Null | Default
 --- | :--- | :--- | :---: | :---: 
 1 | author_id | int(11) | No | None
@@ -24,6 +24,12 @@ CREATE TABLE Publishers (
     publisher_id INT PRIMARY KEY,
     name VARCHAR(100),
     address VARCHAR(255));
+## Publishers Table Output 
+No | Name | Type | Null | Default
+--- | :--- | :--- | :---: | :---: 
+1 | publisher_id | int(11) | No | None
+2 | name | varchar(100) | Yes | NULL
+3 | address | varchar(255) | Yes | NULL
 ## SQL Query for the Creation of __Books__ Table
 CREATE TABLE Books (
     book_id INT PRIMARY KEY,
