@@ -1,6 +1,10 @@
 # Database_MidTerm
 
-
+## Roles of Group Members:
+Shruti Patel – Database & Tables Creation
+Pratham Parekh – CRUD Operations
+Manish Koladiya – Requirements Execution
+Vansh Palkhiwala – Typescript Interface
 ## SQL Query for the Creation of __Customers__ Table
 CREATE TABLE Customers (
     customer_id INT PRIMARY KEY,
