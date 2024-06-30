@@ -71,6 +71,15 @@ CREATE TABLE Reviews (
     review_date TIMESTAMP,
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id));
+## Reviews Table Output 
+No | Name | Type | Null | Default
+--- | :--- | :--- | :---: | :---: 
+1 | review_id | int(11) | No | None
+2 | customer_id | int(11) | Yes | NULL
+3 | book_id | int(11) | Yes | NULL
+4 | rating | int(11) | Yes | NULL
+5 | review_text | text | Yes | NULL
+6 | review_date | timestamp | No | current_timestamp()
 ## SQL Query for the Creation of __Sales__ Table
 CREATE TABLE Sales (
     sale_id INT PRIMARY KEY,
