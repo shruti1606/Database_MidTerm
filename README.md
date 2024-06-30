@@ -112,6 +112,7 @@ INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publi
 (3, 'To Kill a Mockingbird', 'Fiction', 'Audiobook', 3, 3, '1960-07-11', 12.99);
 ## Read Operation
 SELECT * FROM Books WHERE book_id = 3;
-
+## Update Operation
+UPDATE Books SET price = 6.99 WHERE book_id = 2;
 
 
