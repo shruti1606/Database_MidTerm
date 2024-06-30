@@ -89,4 +89,11 @@ CREATE TABLE Sales (
     amount DECIMAL(10,2),
     FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id));
-
+## Sales Table Output 
+No | Name | Type | Null | Default
+--- | :--- | :--- | :---: | :---: 
+1 | sale_id | int(11) | No | None
+2 | customer_id | int(11) | Yes | NULL
+3 | book_id | int(11) | Yes | NULL
+4 | sale_date | timestamp | No | current_timestamp()
+5 | amount | decimal(10,2) | Yes | NULL
