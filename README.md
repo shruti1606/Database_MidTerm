@@ -129,13 +129,11 @@ INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publi
 ## Read Operation
 SELECT * FROM Books WHERE book_id = 3;
 
-SELECT * FROM Books WHERE AuthorID = 1;
+SELECT * FROM Books WHERE author_id = 1;
 
-SELECT * FROM Books WHERE Genre = 'Biography';
+SELECT * FROM Books WHERE genre = 'Biography';
 
-SELECT * FROM Books WHERE PublishedYear > 2019;
-
-SELECT * FROM Books WHERE Price < 30.00;
+SELECT * FROM Books WHERE price < 30.00;
 ## Update Operation
 UPDATE Books SET price = 6.99 WHERE book_id = 2;
 ## Delete Operation
