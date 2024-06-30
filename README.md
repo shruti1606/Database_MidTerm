@@ -104,7 +104,7 @@ No | Name | Type | Null | Default
 4 | sale_date | timestamp | No | current_timestamp()
 5 | amount | decimal(10,2) | Yes | NULL
 ## CRUD Operations on the **Books** Table
-## Insertion Operation 
+## Insert Operation 
 INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
 (1, 'Rich Dad poor Dad', 'Personal Finance', 'Physical', 1, 1, '01-04-2000', 23.99),
 (2, '1984', 'Dystopian', 'E-Book', 2, 2, '1949-06-08', 8.99);
@@ -114,5 +114,6 @@ INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publi
 SELECT * FROM Books WHERE book_id = 3;
 ## Update Operation
 UPDATE Books SET price = 6.99 WHERE book_id = 2;
-
+## Delete Operation
+DELETE FROM Books WHERE book_id = 3;
 
