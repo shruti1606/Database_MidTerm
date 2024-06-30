@@ -7,7 +7,15 @@ CREATE TABLE Customers (
     name VARCHAR(100),
     email VARCHAR(100),
     total_spent DECIMAL(10,2),
-    created_at TIMESTAMP);    
+    created_at TIMESTAMP);
+## customers Table Output 
+No | Name | Type | Null | Default
+--- | :--- | :--- | :---: | :---: 
+1 | customer_id | int(11) | No | None
+2 | name | varchar(100) | Yes | NULL
+3 | email | varchar(100) | Yes | NULL
+4 | total_spent | decimal(10,2) | Yes | NULL
+5 | created_at | timestamp | No | current_timestamp()
 ## SQL Query for the Creation of __Authors__ Table
 CREATE TABLE Authors (
     author_id INT PRIMARY KEY,
