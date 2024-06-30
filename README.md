@@ -33,3 +33,14 @@ CREATE TABLE Books (
     price DECIMAL(10,2),
     FOREIGN KEY (author_id) REFERENCES Authors(author_id),
     FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id));
+
+## SQL Query for the Creation of __Reviews__ Table
+CREATE TABLE Reviews (
+    review_id INT PRIMARY KEY,
+    customer_id INT,
+    book_id INT,
+    rating INT,
+    review_text TEXT,
+    review_date TIMESTAMP,
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id));
