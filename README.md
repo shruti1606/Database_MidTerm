@@ -8,7 +8,7 @@ CREATE TABLE Customers (
     email VARCHAR(100),
     total_spent DECIMAL(10,2),
     created_at TIMESTAMP);
-## customers Table Output 
+## Customers Table Output 
 No | Name | Type | Null | Default
 --- | :--- | :--- | :---: | :---: 
 1 | customer_id | int(11) | No | None
@@ -50,6 +50,17 @@ CREATE TABLE Books (
     price DECIMAL(10,2),
     FOREIGN KEY (author_id) REFERENCES Authors(author_id),
     FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id));
+## Books Table Output 
+No | Name | Type | Null | Default
+--- | :--- | :--- | :---: | :---: 
+1 | book_id | int(11) | No | None
+2 | title | varchar(255) | Yes | NULL
+3 | genre | varchar(50) | Yes | NULL
+4 | format | varchar(20) | Yes | NULL
+5 | author_id | int(11) | Yes | NULL
+6 | publisher_id | int(11) | Yes | NULL
+7 | publish_date | date | Yes | NULL
+8 | price | decimal(10,2) | Yes | NULL
 ## SQL Query for the Creation of __Reviews__ Table
 CREATE TABLE Reviews (
     review_id INT PRIMARY KEY,
