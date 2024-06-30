@@ -112,22 +112,30 @@ INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publi
 INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
 (3, 'To Kill a Mockingbird', 'Fiction', 'Audiobook', 3, 3, '1960-07-11', 12.99);
 
-INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
-VALUES (4, 'The Silent Patient', 2, 1, 'Thriller', 2019, 29.99);
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(4, 'The Silent Patient', 'Thriller', 'Physical', 2, 1, '2019-02-05', 29.99);
 
-INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
-VALUES (5, 'Becoming', 3, 2, 'Biography', 2018, 32.50);
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(5, 'Becoming', 'Biography', 'Physical', 3, 2, '2018-11-13', 32.50);
 
-INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
-VALUES (6, 'Educated', 4, 3, 'Memoir', 2018, 28.00);
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(6, 'Educated', 'Memoir', 'Ebook', 4, 3,'2018-02-20', 28.00);
 
-INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
-VALUES (7, 'Where the Crawdads Sing', 5, 4, 'Mystery', 2018, 25.99);
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(7, 'Where the Crawdads Sing', 'Mystery', 'Physical', 5, 4, '2018-08-14', 25.99);
 
-INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
-VALUES (8, 'Normal People', 6, 5, 'Romance', 2019, 27.99);
+INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
+(8, 'Normal People', 'Romance', 'Physical', 6, 5, '2019-04-16', 27.99);
 ## Read Operation
 SELECT * FROM Books WHERE book_id = 3;
+
+SELECT * FROM Books WHERE AuthorID = 1;
+
+SELECT * FROM Books WHERE Genre = 'Biography';
+
+SELECT * FROM Books WHERE PublishedYear > 2019;
+
+SELECT * FROM Books WHERE Price < 30.00;
 ## Update Operation
 UPDATE Books SET price = 6.99 WHERE book_id = 2;
 ## Delete Operation
