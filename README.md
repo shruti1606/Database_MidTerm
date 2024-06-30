@@ -108,8 +108,24 @@ No | Name | Type | Null | Default
 INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
 (1, 'Rich Dad poor Dad', 'Personal Finance', 'Physical', 1, 1, '01-04-2000', 23.99),
 (2, '1984', 'Dystopian', 'E-Book', 2, 2, '1949-06-08', 8.99);
+
 INSERT INTO Books (book_id, title, genre, format, author_id, publisher_id, publish_date, price) VALUES
 (3, 'To Kill a Mockingbird', 'Fiction', 'Audiobook', 3, 3, '1960-07-11', 12.99);
+
+INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
+VALUES (4, 'The Silent Patient', 2, 1, 'Thriller', 2019, 29.99);
+
+INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
+VALUES (5, 'Becoming', 3, 2, 'Biography', 2018, 32.50);
+
+INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
+VALUES (6, 'Educated', 4, 3, 'Memoir', 2018, 28.00);
+
+INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
+VALUES (7, 'Where the Crawdads Sing', 5, 4, 'Mystery', 2018, 25.99);
+
+INSERT INTO Books (BookID, Title, AuthorID, PublisherID, Genre, PublishedYear, Price) 
+VALUES (8, 'Normal People', 6, 5, 'Romance', 2019, 27.99);
 ## Read Operation
 SELECT * FROM Books WHERE book_id = 3;
 ## Update Operation
