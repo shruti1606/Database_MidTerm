@@ -21,3 +21,15 @@ CREATE TABLE Publishers (
     name VARCHAR(100),
     address VARCHAR(255));
 
+## SQL Query for the Creation of __Books__ Table
+CREATE TABLE Books (
+    book_id INT PRIMARY KEY,
+    title VARCHAR(255),
+    genre VARCHAR(50),
+    format VARCHAR(20),
+    author_id INT,
+    publisher_id INT,
+    publish_date DATE,
+    price DECIMAL(10,2),
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id),
+    FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id));
