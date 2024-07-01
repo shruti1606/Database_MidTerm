@@ -139,13 +139,16 @@ UPDATE Books SET price = 6.99 WHERE book_id = 2;
 ## Delete Operation
 DELETE FROM Books WHERE book_id = 3;
 
-## Database.js File
-const { Sequelize } = require('sequelize');
+## TypeScript Interface for Modifying 'Books' Table
+interface Book {
+    book_id: number;
+    title: string;
+    genre: string;
+    publish_date: Date;
+    author_id: number;
+    publisher_id: number;
+    price: number;
+    format: string;
+}
 
-const sequelize = new Sequelize('online_bookstore', 'username', 'password', {
-    host: 'localhost',
-    dialect: 'mysql'
-});
-
-module.exports = sequelize;
 
