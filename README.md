@@ -162,6 +162,12 @@ GROUP BY Genre
 ORDER BY TotalSales DESC
 LIMIT 1;
 
+## 10 Most Recent Posted Reviews by Customers
+SELECT *
+FROM Reviews
+ORDER BY review_date DESC
+LIMIT 10;
+
 
 ## TypeScript Interface for Modifying 'Books' Table
 interface Book {
