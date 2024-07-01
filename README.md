@@ -157,4 +157,33 @@ cd bookstore
 npm init -y
 npm install express pg
 
+## Creating Server file to connect with DB:
 
+const express = require('express');
+const { Pool } = require('pg');
+
+const app = express();
+const pool = new Pool({
+    user: 'your_username',
+    host: 'localhost',
+    database: 'bookstore',
+    password: 'your_password',
+    port: 5432,
+});
+
+app.use(express.json());
+
+app.get('/books', async (req, res) => {
+    try {
+        const result = await pool.query('SELECT * FROM books');
+        res.json(result.rows);
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// More endpoints for CRUD operations
+
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
+});
