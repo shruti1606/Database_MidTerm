@@ -154,6 +154,13 @@ SELECT book_id, title
 FROM Books
 WHERE Rating > (SELECT AVG(Rating) FROM Books);
 
+## Most Popular Genre by Sales
+SELECT Genre, SUM(Amount) AS TotalSales
+FROM Books B
+JOIN Sales ON Books.book_id = Sales.book_id
+GROUP BY Genre
+ORDER BY TotalSales DESC
+LIMIT 1;
 
 
 ## TypeScript Interface for Modifying 'Books' Table
