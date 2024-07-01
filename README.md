@@ -149,6 +149,12 @@ SELECT customer_id, name
 FROM Customers
 WHERE TotalSpent > 30.00;
 
+## Well Reviewed Books
+SELECT book_id, title
+FROM Books
+WHERE Rating > (SELECT AVG(Rating) FROM Books);
+
+
 
 ## TypeScript Interface for Modifying 'Books' Table
 interface Book {
