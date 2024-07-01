@@ -151,4 +151,10 @@ interface Book {
     format: string;
 }
 
+## Create a new Node.js project to run the project: 
+mkdir bookstore
+cd bookstore
+npm init -y
+npm install express pg
+
 
