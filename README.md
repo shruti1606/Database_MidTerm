@@ -144,6 +144,12 @@ SELECT author_id, name
 FROM Authors
 WHERE TotalBooks > 3 AND BooksByGenre['fiction'] > 3 AND BooksLast5Years > 2001;
 
+## Loyal Customers
+SELECT customer_id, name
+FROM Customers
+WHERE TotalSpent > 30.00;
+
+
 ## TypeScript Interface for Modifying 'Books' Table
 interface Book {
     book_id: number;
